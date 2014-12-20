@@ -1,0 +1,53 @@
+@page {
+	margin	: 1.0cm;
+}
+*{
+	margin	: 0;
+	padding	: 0;
+	text-decoration	: none;
+}
+body {
+	font-family	: serif;
+	font-size	: 80%;
+	color		: #696969;
+}
+
+h1 {
+	font-size	: 110%;
+	margin		: 5px 0;
+}
+h2 {
+	display: inline !important;
+	font-size	: 100%;
+	font-weight	: bold;
+}
+ul, li {
+	list-style : none;
+}
+dl {
+	margin-bottom : 0;
+}
+dt, dd {
+	display: inline-block;
+}
+dt {
+	width	: 12%;
+	text-align	: right;
+	vertical-align	: top;
+}
+dd {
+	width	: 85%;
+}
+.fn {
+	font-size	: 230%;
+	font-weight	: bold;
+	text-align	: center;
+}
+.adr {
+	text-align	: right;
+}
+.section-title {
+	font-size	: 250%;
+	font-weight	: bold;
+}
+
