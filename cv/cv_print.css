@@ -1,53 +1,110 @@
-@page {
-	margin	: 1.0cm;
-}
-*{
-	margin	: 0;
-	padding	: 0;
-	text-decoration	: none;
-}
-body {
-	font-family	: serif;
-	font-size	: 80%;
-	color		: #696969;
-}
 
-h1 {
-	font-size	: 110%;
-	margin		: 5px 0;
-}
-h2 {
-	display: inline !important;
-	font-size	: 100%;
-	font-weight	: bold;
-}
-ul, li {
-	list-style : none;
-}
-dl {
-	margin-bottom : 0;
-}
-dt, dd {
-	display: inline-block;
-}
-dt {
-	width	: 12%;
-	text-align	: right;
-	vertical-align	: top;
-}
-dd {
-	width	: 85%;
-}
-.fn {
-	font-size	: 230%;
-	font-weight	: bold;
-	text-align	: center;
-}
-.adr {
-	text-align	: right;
-}
-.section-title {
-	font-size	: 250%;
-	font-weight	: bold;
-}
+	@top-left-corner { display:none }
+	@top-left { display:none }
+	@top-center { display:none }
+	@top-right { display:none }
+	@top-right-corner { display:none }
+	@bottom-right-corner { display:none }
+	@bottom-right { display:none }
+	@bottom-center { display:none }
+	@bottom-left { display:none }
+	@bottom-left-corner { display:none }
+
+	@page {
+		size:210mm 297mm;
+		margin: 5mm;
+	}
+	*{
+		margin	: 0;
+		padding	: 0;
+		text-decoration	: none;
+	}
+	body {
+		font-family	: Geogia, serif;
+		font-size	: 9pt;
+		color		: #696969;
+	}
+	h1 {
+		font-size	: 110%;
+		margin		: 5px 0;
+		display		: inline;
+	}
+	h2 {
+		display: inline !important;
+		font-size	: 100%;
+		font-weight	: bold;
+	}
+	ul, li {
+		list-style : none;
+	}
+	dl {
+		margin-bottom : 0;
+	}
+	dt, dd {
+		display: inline-block;
+		page-break-inside:avoid;
+	}
+	dt {
+		width	: 18%;
+		text-align	: right;
+		vertical-align	: top;
+		clear	: both;
+	}
+	dd {
+		width	: 80%;
+		page-break-after:auto;
+	}
+	em {
+		font-style: normal;
+	}
+	a:after, #real abbr:after {
+		content: "" !important;
+	}
+	.fn {
+		font-size	: 180%;
+		font-weight	: bold;
+		text-align	: center;
+	}
+	.adr {
+		text-align	: right;
+	}
+	.section-title {
+		font-size	: 150%;
+		font-weight	: bold;
+	}
+	#xp li li {
+		list-style : url(arrow-right-print.png) outside;
+		margin-left	: 16px;
+	}
+	#real dt, #real dd {
+		height	: 127px;
+		clear	: none;
+		font-size: 8pt;
+	}
+	#real dt {
+		width	: 23%;
+		white-space: nowrap;
+	}
+	#real dt:nth-child(4n+1) {
+		clear	: both;
+	}
+	#real dd {
+		width	: 27%;
+		padding	: 0;
+	}
+	#real dt img {
+		width	: 90%;
+	}
+
+	p.visible-print {
+		color			: #666;
+		font-size		: 8pt;
+		padding			: 2em 0 0;
+		clear			: both;
+		page-break-after: always;
+	}
+	p.visible-print span {
+		float	: right;
+	}
+
 

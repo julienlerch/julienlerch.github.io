@@ -1,12 +1,8 @@
 BEGIN:VCARD
 VERSION:3.0
-REV:2014-04-14 21:23:35
-FN:Julien LERCH
-N:LERCH;Julien;
-;Chef de projets Web / E-Commerce
-ADR;TYPE=home:;;11, rue des sorbiers;WIDENSOLEN;;68320;FRANCE
-EMAIL;TYPE=internet,pref:julienlerch@gmail.com
-TEL;TYPE=cell,voice:0603204093
-URL;TYPE=home:http://julien.lerch.free.fr
-TZ:+0200
+FN:LERCH, Julien
+N:LERCH;Julien;;;
+EMAIL;TYPE=INTERNET:julien.lerch@gmail.com
+TEL;TYPE=CELL:0603204093
+item1.URL:http://julien.lerch.free.fr
 END:VCARD

@@ -10,18 +10,6 @@
 			font-weight: normal;
 			font-style: normal;
 		}
-/*
-		@font-face {
-			font-family: 'GandhiSansItalic';
-			src: url('gandhi/GandhiSans-Italic-webfont.eot');
-			src: url('gandhi/GandhiSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-				 url('gandhi/GandhiSans-Italic-webfont.woff') format('woff'),
-				 url('gandhi/GandhiSans-Italic-webfont.ttf') format('truetype'),
-				 url('gandhi/GandhiSans-Italic-webfont.svg#GandhiSansItalic') format('svg');
-			font-weight: normal;
-			font-style: normal;
-		}
-*/
 		@font-face {
 			font-family: 'GandhiSansBold';
 			src: url('gandhi/GandhiSans-Bold-webfont.eot');
@@ -32,197 +20,189 @@
 			font-weight: normal;
 			font-style: normal;
 		}
-/*
-		@font-face {
-			font-family: 'GandhiSansBoldItalic';
-			src: url('gandhi/GandhiSans-BoldItalic-webfont.eot');
-			src: url('gandhi/GandhiSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-				 url('gandhi/GandhiSans-BoldItalic-webfont.woff') format('woff'),
-				 url('gandhi/GandhiSans-BoldItalic-webfont.ttf') format('truetype'),
-				 url('gandhi/GandhiSans-BoldItalic-webfont.svg#GandhiSansBoldItalic') format('svg');
-			font-weight: normal;
-			font-style: normal;
-		}
-		*/
+
 @media screen {
-		*{
-			margin	: 0;
-			padding	: 0;
-			text-decoration	: none;
-		}
+	*{
+		margin	: 0;
+		padding	: 0;
+		text-decoration	: none;
+	}
 
-		body {
-			font-family	: "GandhiSansRegular", "Nimbus Sans L", "Trebuchet MS";
-			color		: #353535;
-			padding-bottom	: 20px;
-		}
-		h1 {
-			font-size	: 230%;
-			font-family	: "GandhiSansBold", "Nimbus Sans L", "Trebuchet MS";
-			font-weight	: bold;
-			margin-top	: 0;
-		}
-		h2 {
-			color			: #008EC0;
-			font-size		: 1em;
-			font-weight		: bold;
-			display			: inline;
-		}
+	body {
+		font-family	: "GandhiSansRegular", "Nimbus Sans L", "Trebuchet MS";
+		color		: #353535;
+		padding-bottom	: 20px;
+	}
+	h1 {
+		font-size	: 230%;
+		font-family	: "GandhiSansBold", "Nimbus Sans L", "Trebuchet MS";
+		font-weight	: bold;
+		margin-top	: 0;
+	}
+	h2 {
+		color			: #008EC0;
+		font-size		: 1em;
+		font-weight		: bold;
+		display			: inline;
+	}
 
-		h3 {
-			font-size		: 100%;
-			font-family		: "Georgia";
-			color		: #000;
-		}
-		ul, li {
-			list-style	: none;
-		}
-		a {
-			text-decoration	: underline;
-			color		: #008EC0;
-			border-bottom : 1px dotted transparent;
-		}
-		a:hover {
-			color		: #000059;
-		}
-		strong {
-			font-style	: normal;
-			font-weight	: bold;
-			color		: #000;
-		}
-		em {
-			font-weight	: bold;
-			text-decoration : none;
-			font-style	: normal;
-		}
+	h3 {
+		font-size		: 100%;
+		font-family		: "Georgia";
+		color		: #000;
+	}
+	ul, li {
+		list-style	: none;
+	}
+	a {
+		text-decoration	: underline;
+		color		: #008EC0;
+		border-bottom : 1px dotted transparent;
+	}
+	a:hover {
+		color		: #000059;
+	}
+	strong {
+		font-style	: normal;
+		font-weight	: bold;
+		color		: #000;
+	}
+	em {
+		font-weight	: bold;
+		text-decoration : none;
+		font-style	: normal;
+	}
 
-		img, table, td, blockquote, code, pre, textarea, input, iframe, object, embed, video {
-			max-width	: 99%;
-			height		: auto;
-		}
-		dt {
-			font-weight: bold;
-			text-align	: right;
-			color		: #000;
-		}
-			dt a {
-				display	: block;
-				text-align	: center;
-			}
-		legend {
-			margin-bottom : 0;
-		}
-		input, textarea {
-			background	: #fff;
-		}
-
-		nav {
-			clear:	left;
-			background	: #ccc !important;
-			border		: 0;
-		}
-			#etat_civil nav a {
-				color: #000054;
-				text-decoration	: none;
-				text-shadow		: none;
-			}
-		#content {
-			line-height : 135%;
-		/*	margin-top	: 130px; */
-			margin-bottom: 25px;
-		}
-		#content p:first-child {
-			margin-top : 15px;
-		}
-			#content > p > a {
-				display		: block;
-				text-align	: center;
-			}
-			#content > p > a.thumbnail {
-				background : url(bg.timeline.gif)
-			}
-			#content .section-title + p {
-				font-style : italic;
-			}
-		#etat_civil li {
-			white-space: nowrap;
-		}
-		#xp li li {
-			list-style : url(arrow-right.png) outside;
-			margin-left	: 16px;
-		}
-		#real dd {
-			/*margin-top : 1.5em;*/
-		}
-		#real dt, #real dd {
-			height	: 140px;
-			font-size: 90%;
-		}
-		#aside form {
-			margin-top : 60px;
-			text-align 	: center;
-		}
-		#aside label {
-			text-align : left;
-			display		: block;
-			margin-top	: 10px;
-		}
-		#aside .label {
-			font-size	: 90%;
-		}
-
-		p.loader {
+	img, table, td, blockquote, code, pre, textarea, input, iframe, object, embed, video {
+		max-width	: 99%;
+		height		: auto;
+	}
+	dt {
+		font-weight: bold;
+		text-align	: right;
+		color		: #000;
+	}
+		dt a {
+			display	: block;
 			text-align	: center;
 		}
-		p.loader img {
-		}
-		.fn {
-			font-size		: 125%;
-		}
-		.section-title {
-			font-weight		: normal;
-			color			: #008EC0;
-			font-size		: 230%;
-			line-height		: 1.8em;
-			clear			: both;
-			font-family		: "GandhiSansBold", "Georgia";
-		}
-		.navbar {
-			margin: 0;
-		}
-		.print {
-			display : none;
-		}
-		.x-small {
-			font-size	: 67%;
-		}
-		.validation {
-			display	: none;
-			position	: absolute;
-			margin	: 0 !important;
-			z-index	: 5;
-		}
-		input:focus + .validation, textarea:focus + .validation {
-			display: block;
-		}
-		input:focus:required:valid + .validation, textarea:focus:required:valid + .validation {
-			background: green;
-		}
-		input:focus:required:valid + .validation .label-danger, textarea:focus:required:valid + .validation .label-danger {
-			display: none;
-		}
-		input:focus:required:invalid + .validation .label-success, textarea:focus:required:invalid + .validation .label-success {
-			display: none;
-		}
-		input:valid, textarea:valid {
-			background : url(valid.png) #fff 97% 3px no-repeat;
-		}
-		input:invalid, textarea:invalid {
-			background : url(exclamation.png) #fff 97% 7px no-repeat;
-		}
+	legend {
+		margin-bottom : 0;
+	}
+	input, textarea {
+		background	: #fff;
+	}
 
+	#etat_civil {
+		color	: #fff;
+		background	: url(bg.top.png) #333 bottom repeat-x;
+		padding: 10px 0 0;
+	}
+	#real dt, #real dd {
+		height	: 180px;
+	}
 
-	@media (max-width: 879px) {
+	#content {
+		line-height : 135%;
+	/*	margin-top	: 130px; */
+		margin-bottom: 25px;
+	}
+	#content p:first-child {
+		margin-top : 15px;
+	}
+		#content > p > a {
+			display		: block;
+			text-align	: center;
+		}
+		#content > p > a.thumbnail {
+			background : url(bg.timeline.gif)
+		}
+		#content .section-title + p {
+			font-style : italic;
+		}
+	#etat_civil li {
+		white-space: nowrap;
+	}
+	#vcard{
+		left: -100%;
+	}
+	#xp li li {
+		list-style : url(arrow-right.png) outside;
+		margin-left	: 16px;
+	}
+	#xp dt img {
+		margin : 15px 0;
+	}
+	#real dd {
+		/*margin-top : 1.5em;*/
+	}
+	#real dt, #real dd {
+		height	: 140px;
+		font-size: 90%;
+	}
+	#aside form {
+		margin-top : 60px;
+		text-align 	: center;
+	}
+	#aside label {
+		text-align : left;
+		display		: block;
+		margin-top	: 10px;
+	}
+	#aside .label {
+		font-size	: 90%;
+	}
+
+	p.loader {
+		text-align	: center;
+	}
+	p.loader img {
+	}
+	.fn {
+		font-size		: 125%;
+	}
+	.section-title {
+		font-weight		: normal;
+		color			: #008EC0;
+		font-size		: 230%;
+		line-height		: 1.8em;
+		clear			: both;
+		font-family		: "GandhiSansBold", "Georgia";
+	}
+
+	.print {
+		display : none;
+	}
+	.x-small {
+		font-size	: 67%;
+	}
+	.validation {
+		display	: none;
+		position	: absolute;
+		margin	: 0 !important;
+		z-index	: 5;
+	}
+	input:focus + .validation, textarea:focus + .validation {
+		display: block;
+	}
+	input:focus:required:valid + .validation, textarea:focus:required:valid + .validation {
+		background: green;
+	}
+	input:focus:required:valid + .validation .label-danger, textarea:focus:required:valid + .validation .label-danger {
+		display: none;
+	}
+	input:focus:required:invalid + .validation .label-success, textarea:focus:required:invalid + .validation .label-success {
+		display: none;
+	}
+	input:valid, textarea:valid {
+		background : url(valid.png) #fff 97% 3px no-repeat;
+	}
+	input:invalid, textarea:invalid {
+		background : url(exclamation.png) #fff 97% 7px no-repeat;
+	}
+}
+
+	@media screen and (max-width: 879px) {
 		body {
 			background	: #eee;
 		}
@@ -232,30 +212,27 @@
 		#content {
 			margin-top : 0;
 		}
-		#etat_civil ul, #etat_civil p {
+		#etat_civil ul {
 			text-align	: right;
+		}
+		#etat_civil ul + ul {
+			text-align	: left;
 		}
 	}
 
-	@media (max-width: 499px) {
+	@media screen and (max-width: 499px) {
 		body {
 			background	: #eee;
 		}
 		.fn {
 			text-align: center;
 		}
-		#etat_civil p, #etat_civil ul {
-			text-align	: right;
-		}
-		#etat_civil p {
-			text-align	: left;
-		}
 	}
 
 
 	@media screen and (max-width: 767px) {
 		dt {
-			text-align : left;
+			text-align : left !important;
 		}
 		.fn {
 			text-align : center;
@@ -279,16 +256,16 @@
 		.fn:first-line {
 			font-size	: 160%;
 		}
-		dt img {
+	/*	dt img {
 			display: block;
 		}
-		#etat_civil {
+	*/	#etat_civil {
 			color	: #fff;
 			background	: url(bg.top.png) #333 bottom repeat-x;
 			padding: 10px 0 0;
 		}
 			#etat_civil a {
-				color		: #00AEEB;
+				color		: #90E2FF; /*00AEEB*/
 			}
 	}
 
@@ -315,87 +292,4 @@
 			background	: #fff;
 		}
 	}
-}
-@media print {
-	@page {
-		margin: 1cm;
-	}
-	*{
-		margin	: 0;
-		padding	: 0;
-		text-decoration	: none;
-	}
-	body {
-		font-family	: serif;
-		font-size	: 80%;
-		color		: #696969;
-	}
 
-	h1 {
-		font-size	: 110%;
-		margin		: 5px 0;
-	}
-	h2 {
-		display: inline !important;
-		font-size	: 100%;
-		font-weight	: bold;
-	}
-	ul, li {
-		list-style : none;
-	}
-	dl {
-		margin-bottom : 0;
-	}
-	dt, dd {
-		display: inline-block;
-	}
-	dt {
-		width	: 14%;
-		text-align	: right;
-		vertical-align	: top;
-		clear	: both;
-	}
-	dd {
-		width	: 85%;
-	}
-	.fn {
-		font-size	: 230%;
-		font-weight	: bold;
-		text-align	: center;
-	}
-	.adr {
-		text-align	: right;
-	}
-	.section-title {
-		font-size	: 250%;
-		font-weight	: bold;
-	}
-	#etat_civil > div {
-		width	: 100%;
-	}
-	#real dt, #real dd {
-		width	: 22%;
-		clear	: none;
-	}
-	#real dt:nth-child(4n+1) {
-		clear	: both;
-	}
-	#real dt img {
-		width	: 100%;
-	}
-	#footer {
-		text-align	: center;
-	}
-	#footer a:after {
-		content: "";
-	}
-}
-
-#etat_civil {
-	color	: #fff;
-	background	: url(bg.top.png) #333 bottom repeat-x;
-	padding: 10px 0 0;
-}
-#real dt, #real dd {
-	height	: 180px;
-}
