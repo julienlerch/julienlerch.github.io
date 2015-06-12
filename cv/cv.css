@@ -41,7 +41,7 @@
 	}
 	h2 {
 		color			: #008EC0;
-		font-size		: 1em;
+		font-size		: 1.5em;
 		font-weight		: bold;
 		display			: inline;
 	}
@@ -86,6 +86,10 @@
 			display	: block;
 			text-align	: center;
 		}
+		
+#xp dt {
+	margin-top	: 4px;
+}
 	legend {
 		margin-bottom : 0;
 	}
