@@ -66,4 +66,30 @@ $(document).ready (function () {
 	$("#send-msg-btn").attr("data-container", "body");
 	$("#send-msg-btn").attr("data-toggle", "popover");
 	$("#send-msg-btn").attr("rel", "popover");
+	
+	var width = $('ul.years li').outerWidth() /12;
+	$.each($('#timeline > ul > li'), function (i, elt) {
+		var elt = $(elt);
+		if(elt.data('start')) {
+			var start	= elt.data('start').split('-');
+			var offset	= parseInt((start[0] - 2000) * 12) + parseInt(start[1]); // calcul du nombre de mois depuis janvier 2000
+			elt.css('left', offset * width); // nombre de mois x largeur d'un mois
+			elt.css('width', elt.data('width') * width);
+		}
+	});
+	$.each($('#timeline ul.events > li, .projects > li'), function (i, elt) {
+		var elt = $(elt);
+		if(elt.data('start')) {
+			var start	= elt.data('start').split('-');
+			var offset	= parseInt((start[0] - 2000) * 12) + parseInt(start[1]);
+			var parent_li = $(elt.parents('li')[0]);
+			var parent_offset = 0;
+			if(parent_li.data('start')) {
+				var parent_start = parent_li.data('start').split('-');
+				parent_offset= parseInt((parent_start[0] - 2000) * 12) + parseInt(parent_start[1]);
+			}
+			elt.css('left', (offset - parent_offset) * width); // nombre de mois x largeur d'un mois
+			elt.css('width', elt.data('width') * width);
+		}
+	});
 });
