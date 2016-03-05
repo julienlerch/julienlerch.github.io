@@ -128,6 +128,7 @@
 		font-family	: "GandhiSansRegular", "Nimbus Sans L", "Trebuchet MS";
 		color		: #353535;
 		padding-bottom	: 20px;
+		overflow-x: hidden;
 	}
 	h1 {
 		font-size	: 230%;
