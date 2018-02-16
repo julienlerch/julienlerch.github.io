@@ -60,7 +60,7 @@
 	padding-right: 30px;
 }
 .years li, .years li:last-child:after {
-	width: 5.4%;
+	width: 5.0%;
 	background: #333;
 	color: #ddd;
 	text-align: center;
@@ -115,7 +115,7 @@
 		padding:	0;
 		background:	#fff;
 	}
-	
+
 	#content .events li p.alert-danger { margin-left: -5px; }
 
 *{
@@ -183,7 +183,7 @@
 			display	: block;
 			text-align	: center;
 		}
-		
+
 #xp dt {
 	margin-top	: 4px;
 }
@@ -393,4 +393,3 @@
 			background	: #fff;
 		}
 	}
-
